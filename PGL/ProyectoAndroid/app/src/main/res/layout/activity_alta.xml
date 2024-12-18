@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AltaActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloCatering"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="BOLLO'S CATERING"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/tvSubtituloServicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="ALTA DE SERVICIO"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloCatering" />
+
+    <!-- Intervalo de tiempo -->
+    <TextView
+        android:id="@+id/tvIntervaloServicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Selecciona el intervalo del tiempo del Servicio"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtituloServicio" />
+
+    <!-- Fecha de inicio -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFechaInicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvIntervaloServicio">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFechaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha inicio"
+            android:inputType="date"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Fecha de fin -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFechaFin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilFechaInicio">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFechaFin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha fin"
+            android:inputType="date"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Número de comensales -->
+    <TextView
+        android:id="@+id/tvNumComensales"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Selecciona el Nº de comensales"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilFechaFin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNumComensales"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNumComensales">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNumComensales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad"
+            android:inputType="number"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tipo de servicio -->
+    <TextView
+        android:id="@+id/tvTipoServicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Selecciona el tipo de Servicio"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilNumComensales" />
+
+    <Spinner
+        android:id="@+id/spTipoServicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTipoServicio" />
+
+    <!-- Nombre del centro -->
+    <TextView
+        android:id="@+id/tvNombreCentro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Escribe el nombre del Centro"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spTipoServicio" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNombreCentro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreCentro">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNombreCentro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Colegio, Residencia, Albergue..."
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botones -->
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonVozAlta"
+        android:layout_width="161dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:text="Reconocimiento de Voz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilNombreCentro" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="168dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="Utiliza el Reconocimiento de voz para Escribir el nombre del Centro "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonVozAlta"
+        app:layout_constraintTop_toBottomOf="@+id/tilNombreCentro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

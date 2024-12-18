@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pregunta2">
+    <!-- Pregunta 2 -->
+
+
+    <!-- TextView para mostrar el resultado de la respuesta 2 -->
+
+    <TextView
+        android:id="@+id/pregunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="2. ¿En qué año llegó el hombre a la Luna?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="119dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pregunta2"
+        app:layout_constraintVertical_bias="0.088">
+
+        <RadioButton
+            android:id="@+id/rb2_op1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1965" />
+
+        <RadioButton
+            android:id="@+id/rb2_op2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1972" />
+
+        <RadioButton
+            android:id="@+id/rb2_op3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1969" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvResultado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup2" />
+
+    <Button
+        android:id="@+id/btnAvanzar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Responder y avanzar a la siguiente pregunta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

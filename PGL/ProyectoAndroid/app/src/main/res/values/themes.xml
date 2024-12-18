@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProyectoAndroid" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/buttonColor</item>
+        <item name="colorPrimaryVariant">@color/buttonColor</item>
+        <item name="colorOnPrimary">@color/buttonTextColor</item>
+        <item name="colorSecondary">@color/buttonColor</item>
+        <item name="colorSecondaryVariant">@color/buttonColor</item>
+        <item name="colorOnSecondary">@color/buttonTextColor</item>
+
+        <!-- Fondo de la aplicación -->
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:statusBarColor">@color/backgroundColor</item>
+
+        <!-- Textos -->
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/hintTextColor</item>
+
+        <!-- Campos de entrada -->
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/buttonColor</item>
+
+        <!-- Ajustes de los TextInputLayout -->
+        <item name="boxStrokeColor">@color/fieldBorderColor</item>
+        <item name="boxBackgroundMode">outline</item>
+    </style>
+
+    <style name="Theme.ProyectoAndroid" parent="Base.Theme.ProyectoAndroid"
+
+        />
+</resources>

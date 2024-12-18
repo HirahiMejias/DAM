@@ -1,0 +1,67 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80D8FF"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etNombreUsuario"
+        android:layout_width="252dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:hint="Nombre de Usuario"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="119dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="84dp"
+        android:text="LOGIN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasenya" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="119dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="48dp"
+        android:text="SING IN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasenya" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="177dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="44dp"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etNombreUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etContrasenya"
+        android:layout_width="259dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreUsuario" />
+</androidx.constraintlayout.widget.ConstraintLayout>

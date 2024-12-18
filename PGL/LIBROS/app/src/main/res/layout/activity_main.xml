@@ -1,0 +1,31 @@
+<!-- activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnAltaLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dar de alta libro" />
+
+    <Button
+        android:id="@+id/btnConsultarLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar libro" />
+
+    <Button
+        android:id="@+id/btnReservarLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservar libro" />
+
+    <Button
+        android:id="@+id/btnDevolverLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devolver libro" />
+</LinearLayout>

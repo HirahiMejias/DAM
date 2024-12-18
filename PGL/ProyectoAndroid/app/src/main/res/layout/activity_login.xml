@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:material="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A2828">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A2828">
+
+
+
+
+    <!-- Barra superior con título y botones -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/topBarTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="BOLLO'S CATERING"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="INICIAR SESIÓN"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="247dp"
+        android:layout_height="204dp"
+        android:layout_below="@id/loginTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo" />
+
+    <!-- Campo de usuario -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usuarioFieldLayout"
+        android:layout_width="395dp"
+        android:layout_height="98dp"
+        android:layout_below="@id/logoImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usuarioField"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Ingresa tu usuario"
+            android:importantForAccessibility="yes"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo de contraseña -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contraseñaFieldLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usuarioFieldLayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contraseñaField"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Ingresa Contraseña"
+            android:inputType="textPassword"
+            android:textColor="#020202"
+            android:textColorHint="#FFFFFF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Checkbox recordar sesión -->
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/recordarCheckBox"
+        android:layout_width="250dp"
+        android:layout_height="74dp"
+        android:layout_below="@id/contraseñaFieldLayout"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Recordar inicio de sesión"
+        android:textColor="#FFFFFF" />
+
+    <!-- Enlace olvidó contraseña -->
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="203dp"
+        android:layout_height="33dp"
+        android:layout_below="@id/recordarCheckBox"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="¿Has olvidado la contraseña?"
+        android:textColor="#258AFD"
+        android:textSize="14sp" />
+
+    <!-- Botón de acceder -->
+
+    <!-- Botón de registrar -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginButton"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotPassword"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2C2C2C"
+        android:text="ACCEDER"
+        android:textColor="#FFFFFF" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registrarButton"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2C2C2C"
+        android:text="REGISTRARSE"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
+
+</ScrollView>

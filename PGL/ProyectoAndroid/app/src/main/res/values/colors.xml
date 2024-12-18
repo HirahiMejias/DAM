@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="box_stroke_color_default">#B0BEC5</color>
+    <color name="box_stroke_color_focused">#795548</color>
+    <color name="hint_text_color">#B0BEC5</color>
+    <color name="text_color">#000000</color>
+    w
+    <color name="soft_background">#F9F9F9</color>
+    <color name="soft_header">#DDEBF7</color>
+    <color name="soft_text_header">#4A4A4A</color>
+    <color name="soft_row_even">#FFFFFF</color>
+    <color name="soft_row_odd">#F3F3F3</color>
+    <color name="soft_text">#6F6F6F</color>
+
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="textColorPrimary">#333333</color>
+    <color name="hintTextColor">#7A7A7A</color>
+    <color name="buttonColor">#000000</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="fieldBorderColor">#BDBDBD</color>
+
+
+</resources>

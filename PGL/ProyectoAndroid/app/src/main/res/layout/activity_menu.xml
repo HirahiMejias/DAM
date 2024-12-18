@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A2828">
+
+    <!-- Encabezado -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/labelTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOLLO'S CATERING"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="16dp" />
+
+        <ImageButton
+            android:id="@+id/buttonPerfil"
+            android:layout_width="66dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="4dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avatar" />
+
+        <!-- Reemplazado layout_marginStart por layout_marginLeft -->
+
+        <!-- Reemplazado layout_marginEnd por layout_marginRight -->
+
+        <!-- Reemplazado layout_marginEnd por layout_marginRight -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Información del usuario -->
+    <TextView
+        android:id="@+id/labelInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INICIO"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp" /> <!-- Reemplazado layout_marginStart por layout_marginLeft -->
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HIRAHI MEJÍAS DELGADO"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/labelInicio"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp" /> <!-- Reemplazado layout_marginStart por layout_marginLeft -->
+
+    <!-- Reemplazado layout_marginStart por layout_marginLeft -->
+
+    <!-- Logo central -->
+
+    <!-- Botones del menú -->
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="246dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Logo de la empresa"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelName" />
+
+    <LinearLayout
+        android:id="@+id/menuButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonAltaServicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ALTA DE SERVICIO"
+            android:textAllCaps="false"
+            android:textColorLink="#FFFFFF"
+            app:rippleColor="#EBEBEB" />
+
+        <Button
+            android:id="@+id/buttonMostrarServicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MOSTRAR SERVICIOS"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/buttonMostrarMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MOSTRAR MENÚ"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonVoz"
+        android:layout_width="193dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="52dp"
+        android:text="Reconocimiento de Voz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuButtons" />
+
+    <TextView
+        android:id="@+id/tvComando"
+        android:layout_width="249dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVoz" />
+
+    <TextView
+        android:id="@+id/tvComando2"
+        android:layout_width="257dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVoz" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="258dp"
+        android:layout_height="54dp"
+        android:text="Utiliza el Reconocimiento de voz para Acceder al Alta,Mostrar Servicios,Menu o El Perfil "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVoz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuButtons"
+        app:layout_constraintVertical_bias="0.529" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

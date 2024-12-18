@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A2828"
+    tools:context=".MostrarActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/labelTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="BOLLO'S CATERING"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/buttonPerfil"
+            android:layout_width="66dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="4dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avatar" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/labelInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="MOSTRAR SERVICIOS"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+
+    <TableLayout
+        android:id="@+id/tablaServicios"
+        android:layout_width="378dp"
+        android:layout_height="466dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/soft_background"
+        android:divider="@drawable/divider"
+        android:padding="16dp"
+        android:showDividers="middle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelInicio">
+
+        <!-- Cabecera -->
+        <TableRow
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:background="@color/soft_header"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Ubicación"
+                android:textColor="@color/soft_text_header"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Fecha Inicio"
+                android:textColor="@color/soft_text_header"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Servicio"
+                android:textColor="@color/soft_text_header"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Comensales"
+                android:textColor="@color/soft_text_header"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/anyadirButton"
+        android:layout_width="144dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Añadir Servicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablaServicios" />
+
+    <Button
+        android:id="@+id/volverButton"
+        android:layout_width="144dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablaServicios" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

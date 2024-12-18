@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#72B2D2"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="CUESTIONARIO"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Pregunta 1 -->
+        <TextView
+            android:id="@+id/pregunta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="1. ¿Cuál es la capital de Francia?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="180dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pregunta1" />
+
+        <!-- TextView para mostrar el resultado de la respuesta 1 -->
+        <TextView
+            android:id="@+id/tvResultado1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinner1" />
+
+        <!-- Pregunta 2 -->
+        <TextView
+            android:id="@+id/pregunta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="2. ¿En qué año llegó el hombre a la Luna?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultado1" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pregunta2">
+
+            <RadioButton
+                android:id="@+id/rb2_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1965" />
+
+            <RadioButton
+                android:id="@+id/rb2_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1972" />
+
+            <RadioButton
+                android:id="@+id/rb2_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1969" />
+        </RadioGroup>
+
+        <!-- TextView para mostrar el resultado de la respuesta 2 -->
+        <TextView
+            android:id="@+id/tvResultado2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup2" />
+
+        <!-- Pregunta 3 -->
+        <TextView
+            android:id="@+id/pregunta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="3. ¿Cuál es el planeta más cercano al Sol?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultado2" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="171dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pregunta3" />
+
+        <!-- TextView para mostrar el resultado de la respuesta 3 -->
+        <TextView
+            android:id="@+id/tvResultado3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinner1" />
+
+        <!-- Pregunta 4 -->
+        <TextView
+            android:id="@+id/pregunta4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="4. ¿Cuál es el animal terrestre más rápido?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultado3" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pregunta4">
+
+            <RadioButton
+                android:id="@+id/rb4_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="León" />
+
+            <RadioButton
+                android:id="@+id/rb4_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aaron" />
+
+            <RadioButton
+                android:id="@+id/rb4_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guepardo" />
+        </RadioGroup>
+
+        <!-- TextView para mostrar el resultado de la respuesta 4 -->
+        <TextView
+            android:id="@+id/tvResultado4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup4" />
+
+        <!-- Pregunta 5 -->
+        <TextView
+            android:id="@+id/pregunta5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="5. ¿Cuál es el océano más grande?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultado4" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pregunta5">
+
+            <RadioButton
+                android:id="@+id/rb5_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atlántico" />
+
+            <RadioButton
+                android:id="@+id/rb5_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pacífico" />
+
+            <RadioButton
+                android:id="@+id/rb5_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teresitas" />
+        </RadioGroup>
+
+        <!-- TextView para mostrar el resultado de la respuesta 5 -->
+        <TextView
+            android:id="@+id/tvResultado5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup5" />
+
+        <!-- Pregunta 6 -->
+        <TextView
+            android:id="@+id/pregunta6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="6. ¿Cuál es el país más grande del mundo?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvResultado5" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pregunta6">
+
+            <RadioButton
+                android:id="@+id/rb6_op1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Canadá" />
+
+            <RadioButton
+                android:id="@+id/rb6_op2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="China" />
+
+            <RadioButton
+                android:id="@+id/rb6_op3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rusia" />
+        </RadioGroup>
+
+        <!-- TextView para mostrar el resultado de la respuesta 6 -->
+        <TextView
+            android:id="@+id/tvResultado6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup6" />
+        <!--7-->
+        <!-- Pregunta 7 -->
+        <TextView
+            android:id="@+id/pregunta7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="7. ¿Cuál es el océano más pequeño?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultado6" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pregunta7">
+
+            <RadioButton
+                android:id="@+id/rb7_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ártico" />
+
+            <RadioButton
+                android:id="@+id/rb7_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Índico" />
+
+            <RadioButton
+                android:id="@+id/rb7_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pacífico" />
+        </RadioGroup>
+
+        <!-- TextView para mostrar el resultado de la respuesta 7 -->
+        <TextView
+            android:id="@+id/tvResultado7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup7" />
+
+        <!-- Pregunta 8 -->
+        <TextView
+            android:id="@+id/pregunta8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="8. ¿Cuál es el metal más ligero?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultado7" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pregunta8">
+
+            <RadioButton
+                android:id="@+id/rb8_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aluminio" />
+
+            <RadioButton
+                android:id="@+id/rb8_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Litio" />
+
+            <RadioButton
+                android:id="@+id/rb8_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plomo" />
+        </RadioGroup>
+
+        <!-- TextView para mostrar el resultado de la respuesta 8 -->
+        <TextView
+            android:id="@+id/tvResultado8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup8" />
+
+        <!-- Pregunta 9 -->
+        <TextView
+            android:id="@+id/pregunta9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="9. ¿Cuál es el continente más poblado?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultado8" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pregunta9">
+
+            <RadioButton
+                android:id="@+id/rb9_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="África" />
+
+            <RadioButton
+                android:id="@+id/rb9_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asia" />
+
+            <RadioButton
+                android:id="@+id/rb9_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Europa" />
+        </RadioGroup>
+
+        <!-- TextView para mostrar el resultado de la respuesta 9 -->
+        <TextView
+            android:id="@+id/tvResultado9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup9" />
+
+        <!-- Pregunta 10 -->
+        <TextView
+            android:id="@+id/pregunta10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="10. ¿Cuál es la moneda de Japón?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultado9" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pregunta10">
+
+            <RadioButton
+                android:id="@+id/rb10_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yen" />
+
+            <RadioButton
+                android:id="@+id/rb10_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Won" />
+
+            <RadioButton
+                android:id="@+id/rb10_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dólar" />
+        </RadioGroup>
+
+        <!-- TextView para mostrar el resultado de la respuesta 10 -->
+        <TextView
+            android:id="@+id/tvResultado10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup10" />
+        <!-- Botón para corregir -->
+        <Button
+            android:id="@+id/btCorregir"
+            android:text="Corregir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup10"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btCorregir" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

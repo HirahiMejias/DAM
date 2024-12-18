@@ -1,0 +1,61 @@
+<!-- activity_alta_libro.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtISBN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ISBN" />
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título" />
+
+    <EditText
+        android:id="@+id/edtAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Autor" />
+
+    <EditText
+        android:id="@+id/edtEjemplaresTotales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ejemplares Totales" />
+
+    <EditText
+        android:id="@+id/edtEjemplaresActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ejemplares Actual" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioDisponible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disponible" />
+
+        <RadioButton
+            android:id="@+id/radioNoDisponible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Disponible" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar" />
+</LinearLayout>
