@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="592.0" prefWidth="753.0" style="-fx-background-color: #8A2828;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.prototipojavafx.EncuestaController">
+    <children>
+        <Label alignment="CENTER" layoutX="72.0" layoutY="96.0" prefHeight="63.0" prefWidth="610.0" style="-fx-background-color: \@;" text="ENCUESTA DE SATISFACCIÓN DE LA APLICACIÓN" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+            <effect>
+                <Glow />
+            </effect>
+        </Label>
+        <Pane layoutX="-3.0" prefHeight="82.0" prefWidth="759.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="215.0" layoutY="10.0" prefHeight="63.0" prefWidth="330.0" text="BOLLO'S CATERING" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="29.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <ImageView fitHeight="82.0" fitWidth="123.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/Logo.png" />
+                    </image>
+                    <effect>
+                        <DropShadow height="117.72" radius="49.567499999999995" width="82.55" />
+                    </effect>
+                </ImageView>
+                <Button fx:id="altavozButton" layoutX="589.0" layoutY="16.0" mnemonicParsing="false" onAction="#botonAltavoz" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #000000;">
+                    <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/Altavoz.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="telefonoButton" layoutX="672.0" layoutY="11.0" mnemonicParsing="false" onAction="#botonTelefono" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #000000;">
+                    <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/apple-phone.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+            </children>
+        </Pane>
+      <Pane layoutX="49.0" layoutY="159.0" prefHeight="54.0" prefWidth="656.0" style="-fx-background-color: #6E3030; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="14.0" layoutY="-4.0" prefHeight="63.0" prefWidth="371.0" text="¿Que valoración le darías a nuestra aplicación?" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         <Spinner layoutX="463.0" layoutY="15.0" />
+         </children>
+      </Pane>
+
+    <Pane layoutX="49.0" layoutY="223.0" prefHeight="54.0" prefWidth="656.0" style="-fx-background-color: #6E3030; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Label layoutX="14.0" layoutY="10.0" prefHeight="35.0" prefWidth="301.0" text="¿Te has sentido cómodo utilizandola?" textFill="WHITE" wrapText="true">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+         <RadioButton fx:id="si" layoutX="361.0" layoutY="19.0" mnemonicParsing="false" onAction="#gracias" text="SI" textFill="WHITE">
+            <toggleGroup>
+               <ToggleGroup fx:id="grupo1" />
+            </toggleGroup>
+         </RadioButton>
+         <RadioButton fx:id="no" layoutX="577.0" layoutY="19.0" mnemonicParsing="false" onAction="#losentimos" text="NO" textFill="WHITE" toggleGroup="$grupo1" />
+         <RadioButton layoutX="445.0" layoutY="19.0" mnemonicParsing="false" text="MAS O MENOS" textFill="WHITE" toggleGroup="$grupo1" />
+
+        </children>
+    </Pane>
+    <Pane layoutX="49.0" layoutY="286.0" prefHeight="54.0" prefWidth="656.0" style="-fx-background-color: #6E3030; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Label layoutX="14.0" layoutY="10.0" prefHeight="35.0" prefWidth="422.0" text="¿Que valoración pondrías en cuanto a acceciblidad?" textFill="WHITE" wrapText="true">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <Slider blockIncrement="1.0" layoutX="469.0" layoutY="11.0" max="10.0" showTickLabels="true" />
+
+        </children>
+    </Pane>
+        <Pane layoutX="49.0" layoutY="350.0" prefHeight="54.0" prefWidth="656.0" style="-fx-background-color: #6E3030; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <Label layoutX="14.0" layoutY="10.0" prefHeight="35.0" prefWidth="422.0" text="¿Que valoración pondrías en cuanto a usabilidad?" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <Slider blockIncrement="1.0" layoutX="467.0" layoutY="14.0" max="10.0" showTickLabels="true" />
+
+            </children>
+        </Pane>
+        <Pane layoutX="49.0" layoutY="414.0" prefHeight="92.0" prefWidth="656.0" style="-fx-background-color: #6E3030; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <Label layoutX="14.0" layoutY="10.0" prefHeight="74.0" prefWidth="293.0" text="¿Desea realizar alguna observación o propuesta de mejora?" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <TextArea layoutX="351.0" layoutY="10.0" prefHeight="74.0" prefWidth="256.0" text="Escribe aqui" />
+
+            </children>
+        </Pane>
+      <Button fx:id="volver" layoutX="49.0" layoutY="526.0" mnemonicParsing="false" onAction="#volverbtn" prefHeight="54.0" prefWidth="129.0" style="-fx-background-color: #000000; -fx-background-radius: 20;" text="VOLVER " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonEnviar" layoutX="576.0" layoutY="526.0" mnemonicParsing="false" onAction="#enviar" prefHeight="54.0" prefWidth="129.0" style="-fx-background-color: #000000; -fx-background-radius: 20;" text="ENVIAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</Pane>

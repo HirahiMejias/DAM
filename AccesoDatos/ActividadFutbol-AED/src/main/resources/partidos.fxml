@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="461.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.partidosController">
+   <children>
+      <Button fx:id="crear" layoutX="25.0" layoutY="384.0" mnemonicParsing="false" onAction="#crearPartido" prefHeight="45.0" prefWidth="161.0" text="CREAR" />
+      <Button fx:id="borrar" layoutX="220.0" layoutY="384.0" mnemonicParsing="false" onAction="#borrarPartido" prefHeight="45.0" prefWidth="161.0" text="BORRAR" />
+      <Button fx:id="actualizarButton" layoutX="419.0" layoutY="384.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="45.0" prefWidth="161.0" text="ACTUALIZAR" />
+      <TextField fx:id="searchField" layoutX="36.0" layoutY="40.0" prefHeight="25.0" prefWidth="264.0" />
+      <TableView fx:id="partidosTable" layoutX="25.0" layoutY="85.0" prefHeight="264.0" prefWidth="788.0">
+
+            <columns>
+               <TableColumn fx:id="equipoLocalColumn" text="Equipo Local" />
+               <TableColumn fx:id="equipoVisitanteColumn" prefWidth="113.0" text="Equipo Visitante" />
+               <TableColumn fx:id="golesLocalColumn" text="Goles Local" />
+               <TableColumn fx:id="golesVisitanteColumn" prefWidth="105.0" text="Goles Visitante" />
+               <TableColumn fx:id="fechaColumn" prefWidth="85.0" text="Fecha" />
+               <TableColumn fx:id="divisionColumn" minWidth="0.0" prefWidth="104.0" text="División" />
+            <TableColumn fx:id="ganadorColumn" prefWidth="75.0" text="Ganador" />
+            <TableColumn fx:id="temporadaColumn" prefWidth="75.0" text="Temporada" />
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="idPartido" />
+            </columns>
+
+      </TableView>
+      <Button fx:id="botonBuscar" layoutX="317.0" layoutY="40.0" mnemonicParsing="false" onAction="#cargarPartidos" prefHeight="25.0" prefWidth="143.0" text="Buscar por nombre" />
+      <TextField fx:id="borrarTf" layoutX="327.0" layoutY="358.0" prefHeight="25.0" prefWidth="54.0" />
+      <Label layoutX="220.0" layoutY="362.0" text="id Partido a borrar" />
+      <Button layoutX="474.0" layoutY="40.0" mnemonicParsing="false" onAction="#cargarPorAnyo" prefHeight="25.0" prefWidth="161.0" text="Buscar por año" />
+   </children>
+</AnchorPane>

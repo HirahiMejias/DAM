@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="528.0" prefWidth="757.0" style="-fx-background-color: #8A2828;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label alignment="CENTER" layoutX="233.0" layoutY="94.0" prefHeight="63.0" prefWidth="288.0" style="-fx-background-color: \@;" text="ALTA DE SERVICIO" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="29.0" />
+            </font>
+            <effect>
+                <Glow />
+            </effect>
+        </Label>
+        <Pane layoutX="-3.0" prefHeight="82.0" prefWidth="759.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="211.0" layoutY="10.0" prefHeight="63.0" prefWidth="337.0" text="BOLLO'S CATERING" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="29.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <ImageView fitHeight="55.0" fitWidth="68.0" layoutX="592.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/TelefonoIcon.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="82.0" fitWidth="123.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/Logo.png" />
+                    </image>
+                    <effect>
+                        <DropShadow height="117.72" radius="49.567499999999995" width="82.55" />
+                    </effect>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</Pane>

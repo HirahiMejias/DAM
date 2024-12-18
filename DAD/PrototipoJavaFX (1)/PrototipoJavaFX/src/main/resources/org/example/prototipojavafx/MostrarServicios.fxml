@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="778.0" prefWidth="757.0" style="-fx-background-color: #8A2828;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.prototipojavafx.MostrarController">
+    <children>
+        <Pane layoutX="-3.0" prefHeight="82.0" prefWidth="759.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="211.0" layoutY="10.0" prefHeight="63.0" prefWidth="337.0" text="BOLLO'S CATERING" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="29.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <ImageView fitHeight="82.0" fitWidth="123.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/Logo.png" />
+                    </image>
+                    <effect>
+                        <DropShadow height="117.72" radius="49.567499999999995" width="82.55" />
+                    </effect>
+                </ImageView>
+            <Button fx:id="altavozButton" layoutX="589.0" layoutY="16.0" mnemonicParsing="false" onAction="#botonAltavoz" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #000000;">
+               <graphic>
+                      <ImageView fitHeight="46.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@img/Altavoz.png" />
+                          </image>
+                      </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="telefonoButton" layoutX="663.0" layoutY="11.0" mnemonicParsing="false" onAction="#botonTelefono" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #000000;">
+               <graphic>
+                      <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@img/apple-phone.png" />
+                          </image>
+                      </ImageView>
+               </graphic></Button>
+            </children>
+        </Pane>
+      <Pane layoutY="82.0" prefHeight="41.0" prefWidth="757.0" style="-fx-background-color: #DF6868;">
+         <children>
+            <Button fx:id="inicioMenu" layoutX="30.0" layoutY="8.0" mnemonicParsing="false" onAction="#botonAccederInicio" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #DF6868;" text="INICIO" />
+            <Button fx:id="altaButton" layoutX="209.0" layoutY="8.0" mnemonicParsing="false" onAction="#botonAccederAlta" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #DF6868;" text="ALTA SERVICIO" />
+            <Button fx:id="modificarServicios" layoutX="401.0" layoutY="8.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #DF6868;" text="MODIFICAR SERVICIOS" />
+            <Button fx:id="mostrarMenu" layoutX="588.0" layoutY="8.0" mnemonicParsing="false" onAction="#botonAccederMostrarMenu" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #DF6868;" text="MOSTRAR MENÚ" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="211.0" layoutY="140.0" prefHeight="41.0" prefWidth="321.0" text="VER SERVICIOS" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="28.0" layoutY="202.0" prefHeight="41.0" prefWidth="686.0" text="SELECCIONA LA FECHA DE LOS SERVICIOS A MOSTRAR :" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="364.0" fitWidth="260.0" layoutX="59.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/calendario.JPG" />
+         </image>
+      </ImageView>
+      <Pane layoutX="347.0" layoutY="284.0" prefHeight="124.0" prefWidth="360.0" style="-fx-background-color: #6E3030; -fx-background-radius: 20;">
+         <children>
+            <Label alignment="CENTER" layoutY="17.0" prefHeight="91.0" prefWidth="146.0" text="SELECCIONA SERVICIO A MOSTRAR:" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="154.0" layoutY="30.0" mnemonicParsing="false" text="Desayuno" textFill="WHITE" />
+            <RadioButton layoutX="154.0" layoutY="70.0" mnemonicParsing="false" text="Merienda" textFill="WHITE" />
+            <RadioButton layoutX="253.0" layoutY="30.0" mnemonicParsing="false" text="Almuerzo" textFill="WHITE" />
+            <RadioButton layoutX="253.0" layoutY="70.0" mnemonicParsing="false" text="Cena" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="347.0" layoutY="423.0" prefHeight="250.0" prefWidth="360.0" style="-fx-background-color: #6E3030; -fx-background-radius: 20;">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" prefHeight="41.0" prefWidth="183.0" text="Nº de Comensales: 125" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="72.0" prefHeight="41.0" prefWidth="108.0" text="Dietas:" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="167.0" prefHeight="41.0" prefWidth="108.0" text="Complementos:" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <TableView layoutX="130.0" layoutY="55.0" prefHeight="74.0" prefWidth="158.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="TIPO" />
+                <TableColumn prefWidth="75.0" text="CANTIDAD" />
+              </columns>
+            </TableView>
+            <TableView layoutX="130.0" layoutY="150.0" prefHeight="74.0" prefWidth="158.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="TIPO" />
+                  <TableColumn prefWidth="75.0" text="CANTIDAD" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+    </children>
+</Pane>

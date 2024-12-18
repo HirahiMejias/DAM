@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Musicos>
+    <Musico Discografica="SteveLean" PaisOrigen="Polonia">
+        <nombre>The Wonder Years</nombre>
+        <anyo_formacion>2005</anyo_formacion>
+        <genero>Punk-Pop</genero>
+        <frontman>Pedro Sanchex</frontman>
+        <discos>
+            <disco>Bebesita</disco>
+            <disco>Muerte</disco>
+            <disco>Vida</disco>
+            <disco>Mastercaster</disco>
+            <disco>California</disco>
+        </discos>
+    </Musico>
+    <Musico Discografica="LMDA" PaisOrigen="España">
+        <nombre>La Polla Records</nombre>
+        <anyo_formacion>1980</anyo_formacion>
+        <genero>Punk</genero>
+        <frontman>Anuel</frontman>
+        <discos>
+            <disco>Bebesita</disco>
+            <disco>Muerte</disco>
+            <disco>Vida</disco>
+            <disco>Mastercaster</disco>
+            <disco>California</disco>
+        </discos>
+    </Musico>
+    <Musico Discografica="Pedro Records" PaisOrigen="Ucrania">
+        <nombre>Phoebe Bridgers</nombre>
+        <anyo_formacion>2012</anyo_formacion>
+        <genero>Indie-folk</genero>
+        <frontman>Pedro</frontman>
+        <discos>
+            <disco>Bebesita</disco>
+            <disco>Muerte</disco>
+            <disco>Vida</disco>
+            <disco>Mastercaster</disco>
+            <disco>California</disco>
+        </discos>
+    </Musico>
+</Musicos>

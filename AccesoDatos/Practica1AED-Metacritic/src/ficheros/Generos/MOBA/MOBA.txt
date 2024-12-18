@@ -1,0 +1,2 @@
+Juegos{game='Infinite Crisis', platform='PC', developer='Turbine Inc.', genre='MOBA', numberPlayers='', rating='T', releaseDate='Mar 26, 2015', positiveCritics=2, neutralCritics=6, negativeCritics=0, positiveUsers=5, neutralUsers=1, negativeUsers=1, metascore=68.0, userScore=67.0}
+Juegos{game='Infinite Crisis', platform='PC', developer='Turbine Inc.', genre='MOBA', numberPlayers='', rating='T', releaseDate='Mar 26, 2015', positiveCritics=2, neutralCritics=6, negativeCritics=0, positiveUsers=5, neutralUsers=1, negativeUsers=1, metascore=68.0, userScore=67.0}

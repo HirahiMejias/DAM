@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="528.0" prefWidth="753.0" style="-fx-background-color: #8A2828;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.prototipojavafx.MenuController">
+    <children>
+        <Label alignment="CENTER" layoutX="95.0" layoutY="128.0" prefHeight="63.0" prefWidth="563.0" style="-fx-background-color: \@;" text="MENU DE OCTUBRE" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+            <effect>
+                <Glow />
+            </effect>
+        </Label>
+        <Pane layoutX="-3.0" prefHeight="82.0" prefWidth="759.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="215.0" layoutY="10.0" prefHeight="63.0" prefWidth="330.0" text="BOLLO'S CATERING" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="29.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <ImageView fitHeight="82.0" fitWidth="123.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/Logo.png" />
+                    </image>
+                    <effect>
+                        <DropShadow height="117.72" radius="49.567499999999995" width="82.55" />
+                    </effect>
+                </ImageView>
+                <Button fx:id="altavozButton" layoutX="589.0" layoutY="16.0" mnemonicParsing="false" onAction="#botonAltavoz" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #000000;">
+                    <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/Altavoz.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="telefonoButton" layoutX="672.0" layoutY="11.0" mnemonicParsing="false" onAction="#botonTelefono" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #000000;">
+               <graphic>
+                      <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@img/apple-phone.png" />
+                          </image>
+                      </ImageView>
+               </graphic></Button>
+            </children>
+        </Pane>
+      <TableView layoutX="126.0" layoutY="200.0" prefHeight="293.0" prefWidth="501.0">
+        <columns>
+          <TableColumn prefWidth="95.0" text="LUNES" />
+          <TableColumn prefWidth="108.0" text="MARTES" />
+            <TableColumn prefWidth="99.0" text="MIÉRCOLES" />
+            <TableColumn prefWidth="101.0" text="JUEVES" />
+            <TableColumn prefWidth="94.0" text="VIERNES" />
+        </columns>
+      </TableView>
+      <Pane layoutY="82.0" prefHeight="35.0" prefWidth="753.0" style="-fx-background-color: #DF6868;">
+         <children>
+            <Button fx:id="inicioButton" layoutX="39.0" layoutY="5.0" mnemonicParsing="false" onAction="#botonAccederInicio" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #DF6868;" text="INICIO" />
+            <Button fx:id="altaButton" layoutX="201.0" layoutY="5.0" mnemonicParsing="false" onAction="#botonAccederAlta" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #DF6868;" text="ALTA SERVICIO" />
+            <Button fx:id="modificarButton" layoutX="380.0" layoutY="5.0" mnemonicParsing="false" onAction="#botonAccederModificar" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #DF6868;" text="MODIFICAR SERVICIO" />
+            <Button fx:id="MostrarButton" layoutX="558.0" layoutY="5.0" mnemonicParsing="false" onAction="#botonAccederMostrar" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #DF6868;" text="MOSTRAR SERVICIO" />
+         </children>
+      </Pane>
+    </children>
+</Pane>
