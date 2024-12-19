@@ -1,0 +1,91 @@
+
+	
+	
+	
+	USE JardinBotanicoBasicas;
+	if object_id('Familia') is not null
+	drop table Familia;
+	go
+	CREATE TABLE Familia (
+	CodFamilia int primary key,
+	Familia varchar(50)not null);
+	
+	USE JardinBotanicoBasicas;
+	if object_id('Planta') is not null
+	drop table Planta;
+	go
+	CREATE TABLE Planta (
+	CodPlanta int primary key,
+	DescripcionPlanta varchar(50),
+	CodFamilia int,
+	Precio DECIMAL(6,2))
+
+INSERT Familia (CodFamilia,Familia)
+VALUES (1,'CYPERACEAE');
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (1,'Scyrpus Holoschoenus',1,23);
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (2,'Scyrpus lacustris',1,14);
+INSERT Familia (CodFamilia,Familia)
+VALUES (2,'CUCURBITACEAE');
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (3,'Cucumis melo',2,4);
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (4,'Cucurbita pepo',2,12);
+INSERT Familia (CodFamilia,Familia)
+VALUES (3,'PINACEAE-ABIETACEAE');
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (5,'Pinus pinea',3,45);
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (6,'Cedrus deodara',3,23.30);
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (7,'Cedrus libani',3,10.40);
+INSERT Familia (CodFamilia,Familia)
+VALUES (4,'PLATANACEAE');
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (8,'Platanus hispánica',4,12.50);
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (9,'Platanus orientalis ',4,14.30);
+INSERT Familia (CodFamilia,Familia)
+VALUES (5,'ROSACEAE');
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (10,'Fragaria X ananassa',5,1.05);
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (11,'Prunus pérsica',5,2.30);
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (12,'Prunus avium',5,6.20);
+INSERT Familia (CodFamilia,Familia)
+VALUES (6,'RUTACEAE');
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (13,'Agave americana',6,20.30);
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (14,'Dracaena indivisa',6,3.20);
+INSERT Familia (CodFamilia,Familia)
+VALUES (7,'RUBIACEAE');
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (15,'Citrus limón',7,10.20);
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (16,'Citrus sinensis',7,12.30);
+INSERT Planta (CodPlanta,DescripcionPlanta,CodFamilia,Precio)
+VALUES (17,'Skimmia japonica',7,17.35);
+GO
+
+	if object_id('Empleado') is not null
+	drop table Empleado;
+	go
+	CREATE TABLE Empleado (
+	DNI char(9) primary key,
+	Nombre varchar(100),
+	Puesto varchar(20),
+	FechaDeNacimiento date,
+	NHijos int,)
+
+	if object_id('Prueba') is not null
+	drop table Prueba;
+	go
+	CREATE TABLE Prueba (
+	DNI char(9) primary key,
+	Nombre varchar(100),
+	Puesto varchar(20),
+	FechaDeNacimiento date,
+	NHijos int,)

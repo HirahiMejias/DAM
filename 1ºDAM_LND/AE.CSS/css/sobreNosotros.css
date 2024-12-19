@@ -1,0 +1,63 @@
+
+.main-container {
+    display: flow-root;
+    width: 100%;
+   margin-top: 30px;
+}
+
+.main-container .container-image {
+    float: left;
+    width: 49%;
+    
+}
+
+.main-container .container-image img {
+    width: 90%;
+    margin: 20px;
+
+}
+
+
+.main-container .container-text {
+    float: right;
+    width: 49%;
+    margin-top: 20px;
+}
+
+.main-container .container-text p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.main-container .container-text img {
+    width: 40px;
+    height: 40px;
+
+}
+.container-text h2{
+    font-size: 2rem;
+}
+.contenedorLogoTexto{
+    height: 50px;
+    
+}
+.contenedorLogoTexto img{
+    float: left;
+    
+}
+.contenedorLogoTexto h2{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.contenedorLogoTexto h2 span{
+   color:orange
+}
+.container-text div+p{
+    font-weight:bold ;
+    margin-bottom: 15px;
+}
+.container-text a>img{
+    margin-top: 10px;
+    
+}

@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    color: aliceblue;
+    height: 70px;
+    z-index: 9999;
+    animation: opacidad auto linear forwards;
+    animation-timeline: scroll(root block);
+  }
+  
+  @keyframes opacidad {
+    from { background-color: black; } /* Se puede omitir */
+    to { background-color: rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(5px) }
+  }
+
+header h1{
+    position: absolute;
+    top: 10px;
+    font-size:4rem;
+    right: 1%;
+}
+
+
+.menu-hamburgesa {
+display: block;
+}
+
+.menu-hamburgesa img {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.menu-hamburgesa input {
+    display: none;
+}
+#miMenu {
+    list-style-type: none; /* Quita los puntos de lista */
+    display: flex;
+    padding: 20px;
+    
+}
+
+
+#miMenu a{
+    padding: 20px 60px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: black;
+    
+}
+#miMenu a:hover{
+background-color: aliceblue;
+color:black;
+}
+
+.bar {
+    width: 0;
+    height: 10%;
+    box-shadow: 0 0 5px darkred;
+    background: red;
+  
+    animation: resize auto linear forwards;
+    animation-timeline: scroll(root block);
+  }
+  
+  @keyframes resize {
+    from { width: 0% } /* Se puede omitir */
+    to { width: 100% }
+  }
+

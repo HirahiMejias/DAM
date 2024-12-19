@@ -1,0 +1,59 @@
+.contenedorIndex {
+    background-color: violet;
+    display: flex;
+    flex-wrap: wrap;/* */
+    width: 100%;
+    justify-content: center;
+}
+
+.Peliculas img {
+    width: 50%;
+    margin-right: 10px;
+    float:left;
+    margin: 10px;
+    border: white 2px solid;
+    view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
+}
+.Peliculas p {
+  margin-top:10px ;
+  margin-right: 10px;
+}
+.Peliculas {
+   width: 30%;
+   border: solid 2px black;
+   margin: 10px;
+   background-color:rgb(127, 127, 222) ;
+   text-align: justify;
+   font-size: 1.2rem;
+}
+
+.Peliculas h2 {
+border-bottom: 1px solid red;
+padding: 10px;
+text-align: center;
+color: brown;
+background-color:rgb(222, 168, 168)
+}
+
+@keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+
+img {
+	
+}

@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+/*
+div { border: 1px dotted pink }
+p   { border: 1px solid green }
+a   { border: 2px solid yellow }
+li  { border: 1px dashed cyan }
+img { border: 1px solid purple}
+*/
+
+html {
+    font-size: 10px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+h1 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 30PX;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.cabecera{
+    text-align: center;
+    display: flow-root;
+    background-color: rgb(66, 64, 64);
+    height:60px;
+    padding-top: 5px;
+
+}
+.contenedorLogo {
+    float: left;
+    width: 30%;
+    height: 50px;
+    background-color: rgb(66, 64, 64);
+    border: 1px black;
+    padding-left: 30px;
+    
+    display: flow-root;
+    
+}
+.contenedorLogo img{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.menu-principal {
+    width: 70%;
+    height: 50px;
+    float: right;
+    background-color: rgb(66, 64, 64);
+    
+}
+
+
+.contenedorLogo h2 {
+    font-size: 2rem;
+    padding-top: 15px;
+    float: left;
+    margin-left: 5px;
+}
+
+.contenedorLogo h2 span {
+    color: orange;
+    } 
+
+.menu {
+    list-style: none;
+    margin-left: 30%;
+    padding-top: 15px;
+    
+    
+}
+
+.menu > .menu-item {
+    float: left;
+    margin-right:10%;
+ 
+   font-weight: bold;
+   font-size: 1.23rem;
+}
+.menu > .menu-item a{
+color: white;
+text-decoration: none;
+
+
+
+}
+a:hover {
+    text-decoration: underline;
+  }
+
+.main-container{
+    display: flow-root;
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+
+}
+
+.main-container > .imagen-principal{
+background-image: url('../Imagenes/Carroussel/Carroussel-1.webp');
+background-size: 100%;
+background-position: center 85%;
+background-repeat: no-repeat;
+width: 100%;
+height: 590px;
+
+
+}
+
+.imagen-principal h1{
+    color: aliceblue;
+    margin-left: 100px;
+    font-size: 4rem;
+    border: 1px solid;
+    width: 5%;
+}
+
+.container-secundario{
+    display: flex;
+    width: 100%;
+     height: 500px;
+}
+
+.container-secundario .container-compra{
+    float: left;
+    width: 40%;
+    
+}
+.container-secundario .container-compra p{
+    font-size: 2rem;
+    margin-right: 5px;
+    margin-top: 5%;
+    
+}
+.container-secundario .container-compra a{
+    font-size: 2rem;
+    margin-top: 10px;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+.container-secundario .container-articulos{
+    float: right;
+    width: 60%;
+}
+.container-secundario .container-articulos img{
+    width: 30%;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+.container-secundario .container-compra a:hover{
+    color: black;
+    background-color:grey
+}
+
+
+/*
+.MenuPrincipal img {
+    width: 50px;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.MenuPrincipal h2 {
+    color: white;
+}
+
+.MenuPrincipal h2 span {
+    color: orange;
+}
+
+.MenuPrincipal ul {
+    list-style: none;
+    display: flex;
+    margin-left: 15%;
+}
+.MenuPrincipal ul li {
+    margin-right: 20%;  
+}
+.MenuPrincipal ul li a{
+   color: aliceblue;
+   text-decoration: none;
+   padding: 15%;
+   font-weight: bold;
+}*/
